@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Alunos_RM98048_RM550909</string>
+    <string name="add_event">Adicionar Evento</string>
+    <string name="recycler_view_description">Lista de eventos registrados</string>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registro de Eventos Extremos do Pedro e Luquinhas"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:paddingBottom="16dp"
+    android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/editTextLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome do Local"
+        android:padding="16dp"
+        android:importantForAccessibility="yes"
+        android:autofillHints="name" />
+
+    <EditText
+        android:id="@+id/editTextEventType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tipo de Evento"
+        android:padding="16dp"
+        android:importantForAccessibility="yes"
+        android:autofillHints="event" />
+
+    <EditText
+        android:id="@+id/editTextImpactLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Grau de Impacto"
+        android:padding="16dp"
+        android:importantForAccessibility="yes"
+        android:autofillHints="impact" />
+
+    <EditText
+        android:id="@+id/editTextEventDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Data do Evento"
+        android:inputType="date"
+        android:importantForAccessibility="yes"
+        android:autofillHints="date" />
+
+    <EditText
+        android:id="@+id/editTextAffectedPeople"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de Pessoas Afetadas"
+        android:inputType="number"
+        android:padding="16dp"
+        android:importantForAccessibility="yes"
+        android:autofillHints="number" />
+
+    <Button
+        android:id="@+id/buttonAddEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_event" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewEvents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:contentDescription="@string/recycler_view_description" />
+
+</LinearLayout>
